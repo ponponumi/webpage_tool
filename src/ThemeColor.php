@@ -12,7 +12,7 @@ class ThemeColor
         $this->colorChange($color);
     }
 
-    public function colorChange(string $color="")
+    public function colorChange(string $color=""): void
     {
         // 色を変える
         if(preg_match('/^#[0-9a-fA-F]{6}$/', $color) === 1){
@@ -28,7 +28,7 @@ class ThemeColor
         }
     }
 
-    public function cssVariableNameChange(string $name="")
+    public function cssVariableNameChange(string $name=""): void
     {
         $this->cssVariableThemeColorName = $name;
     }
