@@ -54,6 +54,11 @@ class ThemeColor
         return "";
     }
 
+    public function metaEcho(): void
+    {
+        echo $this->metaGet();
+    }
+
     public function cssGet(): string
     {
         $css = "";
