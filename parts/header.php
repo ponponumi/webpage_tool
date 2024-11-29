@@ -10,6 +10,7 @@ $title = new Title("<テストサイト>",$page);
 $title->markOffChange(" - ");
 
 $themeColor = new ThemeColor("#ad1");
+$themeColor->colorChange("");
 $themeColor->cssVariableNameChange("--theme-color");
 
 ?>
