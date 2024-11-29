@@ -37,4 +37,10 @@ class ThemeColor
     {
         return $this->color;
     }
+
+    public function metaGet(): string
+    {
+        $color = $this->get();
+        return '<meta name="theme-color" content="' . $color . '">';
+    }
 }
