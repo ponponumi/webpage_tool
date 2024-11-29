@@ -46,6 +46,11 @@ class Title
         return $title;
     }
 
+    public function echo($esc=true): void
+    {
+        echo $this->get($esc);
+    }
+
     public function htmlGet($esc=true): string
     {
         $title = $this->get($esc);
