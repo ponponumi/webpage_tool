@@ -14,4 +14,9 @@ class Title
         $this->pageName = $pageName;
         $this->markOff = $markoff;
     }
+
+    public function siteNameChange(string $siteName): void
+    {
+        $this->siteName = $siteName;
+    }
 }
