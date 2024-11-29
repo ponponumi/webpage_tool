@@ -27,4 +27,9 @@ class ThemeColor
 
         $this->color = $color;
     }
+
+    public function cssVariableNameChange(string $name="")
+    {
+        $this->cssVariableThemeColorName = $name;
+    }
 }
