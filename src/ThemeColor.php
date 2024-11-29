@@ -82,4 +82,9 @@ class ThemeColor
 
         return $style;
     }
+
+    public function styleEcho(): void
+    {
+        echo $this->styleGet();
+    }
 }
