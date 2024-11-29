@@ -43,4 +43,16 @@ class ThemeColor
         $color = $this->get();
         return '<meta name="theme-color" content="' . $color . '">';
     }
+
+    public function cssGet(): string
+    {
+        $css = "";
+        $name = $this->cssVariableThemeColorName;
+
+        if($name !== "" && $this->color !== ""){
+            $css = ":root{" . $name . ":" . $this->color . ";}";
+        }
+
+        return $css;
+    }
 }
