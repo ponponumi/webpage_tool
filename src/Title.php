@@ -10,9 +10,9 @@ class Title
 
     public function __construct(string $siteName,string $pageName="",string $markoff=" | ")
     {
-        $this->siteName = $siteName;
-        $this->pageName = $pageName;
-        $this->markOff = $markoff;
+        $this->siteNameChange($siteName);
+        $this->pageNameChange($pageName);
+        $this->markOffChange($markoff);
     }
 
     public function siteNameChange(string $siteName): void
