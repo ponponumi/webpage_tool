@@ -32,4 +32,9 @@ class ThemeColor
     {
         $this->cssVariableThemeColorName = $name;
     }
+
+    public function get(): string
+    {
+        return $this->color;
+    }
 }
