@@ -19,4 +19,9 @@ class Title
     {
         $this->siteName = $siteName;
     }
+
+    public function pageNameChange(string $pageName=""): void
+    {
+        $this->pageName = $pageName;
+    }
 }
