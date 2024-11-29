@@ -8,7 +8,7 @@ class ThemeColor
 
     public function __construct(string $color="")
     {
-        $this->color = $color;
+        $this->colorChange($color);
     }
 
     public function colorChange(string $color="")
