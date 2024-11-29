@@ -5,6 +5,7 @@ namespace Ponponumi\WebpageTool;
 class ThemeColor
 {
     public string $color = "";
+    public string $cssVariableThemeColorName = "";
 
     public function __construct(string $color="")
     {
