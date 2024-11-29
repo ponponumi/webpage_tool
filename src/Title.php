@@ -59,7 +59,7 @@ class Title
 
     public function htmlEcho($esc = true): void
     {
-        echo $this->htmlEcho($esc);
+        echo $this->htmlGet($esc);
     }
 
     public function headingGet($esc=true): string
