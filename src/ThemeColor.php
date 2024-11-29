@@ -41,7 +41,12 @@ class ThemeColor
     public function metaGet(): string
     {
         $color = $this->get();
-        return '<meta name="theme-color" content="' . $color . '">';
+
+        if($color !== ""){
+            return '<meta name="theme-color" content="' . $color . '">';
+        }
+
+        return "";
     }
 
     public function cssGet(): string
