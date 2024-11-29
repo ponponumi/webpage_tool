@@ -6,7 +6,7 @@ use Ponponumi\WebpageTool\Title;
 
 $page = isset($page) ? $page : "";
 $title = new Title("<テストサイト>",$page);
-$title->markOffChange(" - ")
+$title->markOffChange(" - ");
 
 ?>
 <!DOCTYPE html>
