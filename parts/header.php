@@ -5,7 +5,7 @@ require_once __DIR__ . "/../vendor/autoload.php";
 use Ponponumi\WebpageTool\Title;
 
 $page = isset($page) ? $page : "";
-$title = new Title("テストサイト",$page);
+$title = new Title("<テストサイト>",$page);
 
 ?>
 <!DOCTYPE html>
