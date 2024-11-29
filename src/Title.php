@@ -8,11 +8,11 @@ class Title
     public string $pageName = "";
     public string $markOff = "";
 
-    public function __construct(string $siteName,string $pageName="",string $markoff=" | ")
+    public function __construct(string $siteName,string $pageName="",string $markOff=" | ")
     {
         $this->siteNameChange($siteName);
         $this->pageNameChange($pageName);
-        $this->markOffChange($markoff);
+        $this->markOffChange($markOff);
     }
 
     public function siteNameChange(string $siteName): void
