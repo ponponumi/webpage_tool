@@ -55,4 +55,16 @@ class ThemeColor
 
         return $css;
     }
+
+    public function styleGet(): string
+    {
+        $css = $this->cssGet();
+        $style = "";
+
+        if($css !== ""){
+            $style = "<style>" . $css . "</style>";
+        }
+
+        return $style;
+    }
 }
