@@ -1,6 +1,6 @@
 <?php
 
-$page = "メニュー";
+$page = "メニュー <おいしいよ！>";
 require_once __DIR__ . "/../parts/header.php";
 
 ?>
