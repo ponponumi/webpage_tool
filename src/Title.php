@@ -61,4 +61,23 @@ class Title
     {
         echo $this->htmlEcho($esc);
     }
+
+    public function headingGet($esc=true): string
+    {
+        // h1タグ用のタイトルを取得する
+        // ページ名があればそのページ名、なければサイト名を取得する
+        $title = "";
+
+        if($this->pageName !== ""){
+            $title = $this->pageName;
+        }else{
+            $title = $this->siteName;
+        }
+
+        if($esc){
+            $title = htmlspecialchars($title, ENT_QUOTES);
+        }
+
+        return $title;
+    }
 }
