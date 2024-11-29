@@ -38,6 +38,11 @@ class ThemeColor
         return $this->color;
     }
 
+    public function echo(): void
+    {
+        echo $this->color;
+    }
+
     public function metaGet(): string
     {
         $color = $this->get();
