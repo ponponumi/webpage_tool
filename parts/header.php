@@ -9,7 +9,7 @@ $page = isset($page) ? $page : "";
 $title = new Title("<テストサイト>",$page);
 $title->markOffChange(" - ");
 
-$themeColor = new ThemeColor("");
+$themeColor = new ThemeColor("#gh62");
 $themeColor->cssVariableNameChange("--theme-color");
 
 ?>
