@@ -24,4 +24,9 @@ class Title
     {
         $this->pageName = $pageName;
     }
+
+    public function markOffChange(string $markOff=" | "): void
+    {
+        $this->markOff = $markOff;
+    }
 }
