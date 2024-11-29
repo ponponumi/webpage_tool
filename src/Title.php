@@ -29,4 +29,16 @@ class Title
     {
         $this->markOff = $markOff;
     }
+
+    public function get(): string
+    {
+        // タイトルを取得する
+        $title = $this->siteName;
+
+        if($this->pageName !== ""){
+            $title = $this->pageName . $this->markOff . $title;
+        }
+
+        return $title;
+    }
 }
