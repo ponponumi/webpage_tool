@@ -24,7 +24,7 @@ class ThemeColor
             $color = "#" . $colorSplit[1] . $colorSplit[1] . $colorSplit[2] . $colorSplit[2] . $colorSplit[3] . $colorSplit[3];
             $this->color = $color;
         }elseif($color === ""){
-            $this->color = $color;
+            $this->color = "";
         }
     }
 
