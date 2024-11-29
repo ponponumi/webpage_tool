@@ -30,7 +30,7 @@ class Title
         $this->markOff = $markOff;
     }
 
-    public function get(): string
+    public function get($esc=true): string
     {
         // タイトルを取得する
         $title = $this->siteName;
@@ -39,17 +39,16 @@ class Title
             $title = $this->pageName . $this->markOff . $title;
         }
 
+        if($esc){
+            $title = htmlspecialchars($title, ENT_QUOTES);
+        }
+
         return $title;
     }
 
     public function htmlGet($esc=true): string
     {
-        $title = $this->get();
-
-        if($esc){
-            $title = htmlspecialchars($title, ENT_QUOTES);
-        }
-
+        $title = $this->get($esc);
         return "<title>" . $title . "</title>";
     }
 }
