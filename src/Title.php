@@ -56,4 +56,9 @@ class Title
         $title = $this->get($esc);
         return "<title>" . $title . "</title>";
     }
+
+    public function htmlEcho($esc = true): void
+    {
+        echo $this->htmlEcho($esc);
+    }
 }
