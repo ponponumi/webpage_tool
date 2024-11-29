@@ -41,4 +41,15 @@ class Title
 
         return $title;
     }
+
+    public function htmlGet($esc=true): string
+    {
+        $title = $this->get();
+
+        if($esc){
+            $title = htmlspecialchars($title, ENT_QUOTES);
+        }
+
+        return "<title>" . $title . "</title>";
+    }
 }
